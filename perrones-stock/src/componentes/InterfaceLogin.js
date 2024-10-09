@@ -1,7 +1,7 @@
 import React from 'react';
-import { Card, CardContent } from '../../components/ui/card';
-import { Input } from '../../components/ui/input';
-import { Button } from '../../components/ui/button';
+import { Card, CardContent } from '../components/ui/card';
+import { Input } from '../components/ui/input';
+import { Button } from '../components/ui/button';
 
 const LoginInterface = () => {
   return (
@@ -11,7 +11,7 @@ const LoginInterface = () => {
           <div className="w-1/2 bg-pink-200 p-8">
             <div className="mb-8 text-center">
               <div className="inline-block rounded-full bg-white p-4">
-                <img src="/hotdog-logo.png" alt="Hotdogs Perrones Logo" className="h-24 w-24" />
+              <img src={`${process.env.PUBLIC_URL}/hotdog-logo.png`} alt="Hotdogs Perrones Logo" className="h-24 w-24" />
               </div>
             </div>
             <CardContent>
@@ -23,7 +23,7 @@ const LoginInterface = () => {
             </CardContent>
           </div>
           <div className="w-1/2 bg-white p-8 flex flex-col justify-center items-center">
-            <img src="/hotdog-cart.png" alt="Hot Dog Cart" className="max-w-xs mb-4" />
+          <img src={`${process.env.PUBLIC_URL}/hotdog-cart.jpg`} alt="Hot Dog Cart" className="max-w-xs mb-4" />
             <h2 className="text-xl font-bold mb-2">Los más ricos de San Salvador.</h2>
             <p className="text-blue-500">¡Inicia sesión para empezar!</p>
           </div>
